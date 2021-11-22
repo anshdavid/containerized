@@ -1,0 +1,46 @@
+# machine learning library list
+
+# basic
+joblib
+numpy
+pandas
+matplotlib
+seaborn
+graphviz
+# pyglet
+Pillow
+statsmodels
+beautifulsoup4
+# gekko
+numexpr
+numba
+
+# libraries
+scikit-learn
+scikit-image
+scipy
+xgboost
+
+scikit-learn-intelex
+
+# opencv-python
+# dlib
+
+nltk
+# pytesseract
+gensim
+
+scikit-bio
+scrapy
+
+# helpers
+biopython
+bitarray
+cytoolz
+Cython
+mkl
+openpyxl
+protobuf
+psutil
+pyqtgraph
+sympy
