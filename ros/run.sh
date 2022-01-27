@@ -15,20 +15,9 @@ catch() {
 
 run_build (){
 
-    docker run -it --name obsidian \
-    -u user \
-    -v "$(pwd):/home/user/workspace" \
-    -v /tmp/.X11-unix:/tmp/.X11-unix:rw \
-    -v $XAUTH:$XAUTH \
-    -e DISPLAY=$DISPLAY \
-    -e QT_X11_NO_MITSHM=1 \
-    -e XAUTHORITY=$XAUTH \
-    --runtime=nvidia \
-    --gpus 0 \
-    --shm-size=2g \
-    xcog:0.1
-
     echo "creating docker container..."
+
+    docker run -it -u user -v "$(pwd):/home/user/catkin_ws" -v "/tmp/.X11-unix:/tmp/.X11-unix:rw" -v $XAUTH:$XAUTH -e DISPLAY=$DISPLAY -e QT_X11_NO_MITSHM=1 -e XAUTHORITY=$XAUTH --gpus 0 --shm-size=2g --name obsidian rosdocker:0.2
 
 }
 

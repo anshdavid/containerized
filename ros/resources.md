@@ -3,6 +3,7 @@
 - https://gist.github.com/ruffsl/e7ca631a618ece3eb0be8e4bf168accb
 
 
+    export containerId=$(docker ps -l -q)
 ## for the lazy and reckless
     xhost +local:root
     xhost -local:root
